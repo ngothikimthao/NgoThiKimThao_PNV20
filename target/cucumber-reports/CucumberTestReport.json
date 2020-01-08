@@ -1,0 +1,131 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# new feature"
+      },
+      {
+        "line": 2,
+        "value": "# Tags: optional"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12106238000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Open website http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.way2automation.com/angularjs-protractor/banking/#/customer",
+                  "offset": 13
+                }
+              ],
+              "location": "CommonTest.openWebsite(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1325919900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login successfully",
+            "match": {
+              "location": "DepositTest.loginSuccesfully()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Customer deposit",
+        "description": "",
+        "id": "customer-deposit;customer-deposit",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2363271100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click deposit tab",
+            "match": {
+              "location": "DepositTest.clickDepositTab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2182964800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I type amount as 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 17
+                }
+              ],
+              "location": "DepositTest.setAmount(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1110730100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click submit deposit",
+            "match": {
+              "location": "DepositTest.clickSubmit()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I verify that deposit successfully with amount as 2000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2000",
+                  "offset": 50
+                }
+              ],
+              "location": "DepositTest.verifyLoginSuccesfully(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Customer deposit",
+    "description": "",
+    "id": "customer-deposit",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/customerdeposit.feature"
+  }
+]
